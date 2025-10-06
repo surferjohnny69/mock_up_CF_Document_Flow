@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navigate, createBrowserRouter } from 'react-router-dom'
+import { Navigate, createHashRouter } from 'react-router-dom'
 import { Layout } from './components/Layout'
 import Documents from './routes/Documents'
 import Preview from './routes/Preview'
@@ -18,7 +18,7 @@ import WellnessChecks from './routes/WellnessChecks'
 import Education from './routes/Education'
 import Settings from './routes/Settings'
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
   {
     path: '/',
     element: <Layout />,
